@@ -1,7 +1,7 @@
 ###############################################################
 # Program:
 #     Assignment 02, STACK
-#     Brother XXXX, CS235
+#     Brother JonesL, CS235
 # Author:
 #     <your name here>
 # Summary:
@@ -13,7 +13,7 @@
 ##############################################################
 # The main rule
 ##############################################################
-a.out: stack.h assignment02.o infix.o 
+a.out: stack.h assignment02.o infix.o
 	g++ -o a.out assignment02.o infix.o  -std=c++11
 	tar -cf assignment02.tar *.h *.cpp makefile
 
@@ -27,4 +27,3 @@ assignment02.o: stack.h infix.h assignment02.cpp
 
 infix.o: stack.h infix.h infix.cpp
 	g++ -c infix.cpp -std=c++11
-
